@@ -8,6 +8,7 @@ body {
   background: #DDF9FB;
   color: #13072C;
   margin: 40px auto 40px auto;
+  height: 100vh;
 }
 
 div.container {
@@ -18,5 +19,23 @@ div.container {
   height: 90vh;
   margin: 0 auto;
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "info"
+    "nav";
+  header {
+    grid-area: header;
+  }
+  section.mid-section {
+    grid-area: info;
+  }
+  section.bottom-section {
+    grid-area: nav;
+  }
 }
+
+
+
+
 

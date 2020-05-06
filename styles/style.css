@@ -6,7 +6,8 @@ body {
   line-height: 145%;
   background: #DDF9FB;
   color: #13072C;
-  margin: 40px auto 40px auto; }
+  margin: 40px auto 40px auto;
+  height: 100vh; }
 
 div.container {
   background: linear-gradient(180deg, #F4A4A4 0%, rgba(210, 189, 255, 0.94) 100%);
@@ -15,6 +16,14 @@ div.container {
   width: 90vw;
   height: 90vh;
   margin: 0 auto;
-  display: grid; }
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header" "info" "nav"; }
+  div.container header {
+    grid-area: header; }
+  div.container section.mid-section {
+    grid-area: info; }
+  div.container section.bottom-section {
+    grid-area: nav; }
 
 /*# sourceMappingURL=style.css.map */
