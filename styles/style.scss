@@ -1,27 +1,22 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 145%;
   background: #DDF9FB;
+  color: #13072C;
+  margin: 40px auto 40px auto;
 }
+
+div.container {
+  background: linear-gradient(180deg, #F4A4A4 0%, rgba(210, 189, 255, 0.94) 100%);
+  border: 3px solid #293046;
+  border-radius: 31px;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  display: grid;
+}
+
